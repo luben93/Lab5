@@ -23,10 +23,10 @@ public class gameView extends view {
 	public gameView() {
 		super("bg1.jpg");
 		setPreferredSize(new Dimension(500, 500));
-		this.setLayout(new GridBagLayout());
-		addComponentsToPaneGrid();
-		//setLayout(new BorderLayout());
-		//addComponentsToPaneBorder(this);// no panel on panel action :(
+		//this.setLayout(new GridBagLayout());
+		//addComponentsToPaneGrid();
+		setLayout(new BorderLayout());
+		addComponentsToPaneBorder(this);// no panel on panel action :(
 		
 
 	}
