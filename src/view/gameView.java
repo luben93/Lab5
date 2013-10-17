@@ -34,19 +34,21 @@ public class gameView extends view {
 	public void addComponentsToPaneBorder(Container pane) {
 
 		middle = new JPanel();
-		middle.setBackground(Color.blue);
 		middle.setSize((int)(pane.getHeight()*0.7),(int)(pane.getWidth()*0.6));
+		middle.setOpaque(false);
+
 		pane.add(middle, BorderLayout.CENTER);
 
 		left = new JPanel();
 		left.setBackground(Color.black);
-		middle.setSize((int)(pane.getWidth()*0.2),pane.getHeight());
+		left.setSize((int)(pane.getWidth()*0.2),pane.getHeight());
+		
 		pane.add(left, BorderLayout.LINE_START);
 
 		rigth = new JPanel();
 		//middle.setSize((int)(pane.getWidth()*0.2),pane.getHeight());
-		middle.setSize(new Dimension((int)(pane.getWidth()*0.2),pane.getHeight()));
-		//middle.setBackground(Color.OPAQUE);
+		rigth.setSize(new Dimension((int)(pane.getWidth()*0.2),pane.getHeight()));
+		rigth.setOpaque(true);
 		pane.add(rigth, BorderLayout.PAGE_END);
 
 		bottom = new JPanel();
