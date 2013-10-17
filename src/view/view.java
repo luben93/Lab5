@@ -33,6 +33,7 @@ public abstract class view extends JPanel implements ActionListener {
 			//e.printStackTrace();
 			System.out.println(e.getMessage());
 			
+			
 		}
 	}
 
